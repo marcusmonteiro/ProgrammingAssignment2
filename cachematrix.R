@@ -48,7 +48,7 @@ CacheSolve <- function(x, ...) {
   }
   
   m <- x$GetMatrix()
-  inv <- solve(m)
+  inv <- solve(m, ...)
   x$SetInverse(inv)
   inv
 }
